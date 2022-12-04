@@ -8,6 +8,7 @@ import Article from "../components/Article";
 import Categories from "../components/Categories";
 import Author from "../components/Author";
 import Profile from "../components/Profile";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import "./App.css";
 
