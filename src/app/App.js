@@ -8,19 +8,25 @@ import Article from "../components/Article";
 import Categories from "../components/Categories";
 import Author from "../components/Author";
 import Profile from "../components/Profile";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "./App.css";
 
 function App() {
   return (
-    <div>
-      <Header />
+    <Router>
+      <Header/>
       <main>
-        {/* Add Routes here! */}
+        <Route path='/about'><About/></Route>
+        <Route path='/sign-up'><SignUp/></Route>
+        <Route path='/articles'><Articles/></Route>
+        <Route path='/article'><Article/></Route>
+        <Route path='/catefories'><Categories/></Route>
+        <Route path='/author'><Author/></Route>
+        <Route path='/profile'><Profile/></Route>
       </main>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
