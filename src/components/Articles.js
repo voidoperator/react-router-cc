@@ -4,8 +4,6 @@ import { selectArticles, filterArticles } from "../features/articles/articlesSli
 import Search from "./Search";
 import { Link } from "react-router-dom";
 
-// Import Link from React Router
-
 export default function Articles () {
   const articles = useSelector(selectArticles)
   
