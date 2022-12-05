@@ -2,8 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { selectArticles, filterArticles } from "../features/articles/articlesSlice";
 import Search from "./Search";
-import { BrowserRouter as Route, Link } from "react-router-dom";
-import Article from "./Article";
+import { Link } from "react-router-dom";
 
 export default function Articles () {
   const articles = useSelector(selectArticles)
