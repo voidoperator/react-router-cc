@@ -21,8 +21,9 @@ function App() {
         <Route path='/sign-up'><SignUp/></Route>
         <Route path='/articles'><Articles/></Route>
         <Route path='/catefories'><Categories/></Route>
-        <Route path='/author'><Author/></Route>
+        <Route path='/authors/:name?'><Author/></Route>
         <Route path='/profile'><Profile/></Route>
+        <Route path='/articles/:title?'><Article/></Route>
       </main>
       <Footer />
     </Router>
