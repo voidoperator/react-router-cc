@@ -13,10 +13,16 @@ export default function Profile () {
   // use loggedIn to return a Redirect
   
   return (
-    <main>
-      <h1>{currentUser.username}</h1>
-      <Link to={"/profile/edit"}>Edit</Link>
-      {/* Render a route for EditProfileForm */}
-    </main>
+    <>
+      <main>
+        <h1>{currentUser.username}</h1>
+        <Link to={"/profile/edit"}>Edit</Link>
+        {/* Render a route for EditProfileForm */}
+      </main>
+
+      <Route path='/profile/edit'>
+        <EditProfileForm/>
+      </Route>
+    </>
   )
 }
